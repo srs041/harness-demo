@@ -3,3 +3,7 @@ pipeline:
     - steps:
         - run:
             script: echo "hello world"
+        - name: dev
+          run:
+            script: echo "second task"
+          id: dev
