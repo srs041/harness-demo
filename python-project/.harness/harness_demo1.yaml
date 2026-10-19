@@ -20,7 +20,7 @@ pipeline:
         ###############################################
         # CHANGE THIS: Your repo name
         ###############################################
-        repoName: harness_demo
+        repoName: harness-demo
         build:
           type: branch
           spec:
