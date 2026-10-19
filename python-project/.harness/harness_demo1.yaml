@@ -1,8 +1,28 @@
 pipeline:
+  name: harness_demo1
+  identifier: harness_demo1
+  ##################################################
+  # CHANGE THIS: Your project ID
+  ###################################################
+  projectIdentifier: Demo_1
+  ####################################################
+  # CHANGE THIS: Your org name
+  ###################################################
+  orgIdentifier: default
+  tags: { }
+  properties:
+    ci:
+      codebase:
+        ##############################################
+        # CHANGE THIS: Your GitHub connector
+        ############################################
+        connectorRef: connector_Github_a13c
+        ###############################################
+        # CHANGE THIS: Your repo name
+        ###############################################
+        repoName: harness_demo
+        build: <+input>
   stages:
-    - steps:
-        - run:
-            script: echo "hello world"
     - stage:
         name: build-python
         identifier: build_python
