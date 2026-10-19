@@ -91,7 +91,7 @@ pipeline:
                     ###############################################
                     # CHANGE THIS: Your Docker Hub connector name
                     ##############################################
-                    connectorRef: dockerhub
+                    connectorRef: docker_demo1
                     repo: <+variable.docker_username>/harness-demo
                     tags:
                       - <+pipeline.sequenceId>
